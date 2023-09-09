@@ -57,6 +57,11 @@ namespace Tetraizor.DebugUtils
             PrintMessageEmitted?.Invoke(message);
         }
 
+        public static void LogSuccess(string message)
+        {
+            PrintMessageEmitted?.Invoke(message);
+        }
+
         public static void LogWarning(string message)
         {
             WarningMessageEmitted?.Invoke(message);
